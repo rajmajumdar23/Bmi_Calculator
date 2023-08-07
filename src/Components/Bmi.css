@@ -1,0 +1,165 @@
+body {
+  background: linear-gradient(135deg, #ff00cc, #00ccff);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 69.5vh;
+  background: linear-gradient(135deg, #e6f7ff, #d1e9ff);
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.label-input label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.label-input input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: #e94545;
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #28a745;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.unit-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -0.5rem;
+}
+
+.unit-system label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff6b6b;
+}
+
+.unit-system select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ff6b6b;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.unit-system select:hover,
+.unit-system select:focus {
+  border-color: #e94545;
+  transform: translateY(-2px);
+}
+
+.recommendation {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ff6b6b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .label-input label {
+    font-size: 1rem;
+  }
+
+  .label-input input {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .result,
+  .recommendation {
+    font-size: 1.2rem;
+  }
+
+  .unit-system label {
+    font-size: 1rem;
+  }
+
+  .unit-system select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
